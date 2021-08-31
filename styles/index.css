@@ -1,0 +1,282 @@
+/*NORMALIZE*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*BODY*/
+#body {
+  background-color: black;
+  background-size: cover;
+  color: #ff0076; }
+
+.grid {
+  display: grid;
+  grid-template-rows: 1fr 4fr 1fr;
+  max-height: 100vh; }
+
+/*NAVEGACION*/
+.navegacion {
+  font-size: 30px;
+  font-family: 'Lato';
+  font-weight: bold;
+  background-color: transparent;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: flex-end; }
+
+.listaNav {
+  display: flex;
+  padding-left: 40%;
+  padding-top: 7px;
+  list-style: none; }
+
+.navegacion :hover {
+  transition: color 1.3s;
+  color: #e63946ff; }
+
+nav ul a {
+  text-decoration: none;
+  color: #b047ff;
+  border: 10px transparent; }
+
+.enlaces {
+  padding: 15px; }
+
+.enlaces:hover {
+  transform: translateY(10px); }
+
+.listaNav-consejos {
+  position: relative;
+  padding: 15px; }
+
+.listaNav-consejos_sub {
+  position: absolute;
+  display: none;
+  list-style-type: none; }
+
+.listaNav-consejos:hover .listaNav-consejos_sub {
+  display: block; }
+
+/*BOOTSTRAP*/
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0; }
+
+.nav-item {
+  text-align: center; }
+
+.nav-item:hover {
+  border: 2px solid; }
+
+.nav-item {
+  color: #b047ff; }
+
+.nav-item {
+  color: #b047ff; }
+
+.bg-light {
+  --bs-bg-opacity: 0; }
+
+.navbar-toggler-icon {
+  background-color: #ff0076;
+  height: 40px;
+  width: 40px; }
+
+.navbar-toggler-icon:hover {
+  border: 2px solid #b047ff; }
+
+.navbar-brand {
+  padding-left: 25px;
+  padding-top: 10px; }
+
+.nav-link {
+  color: #b047ff; }
+
+.navbar {
+  display: none; }
+
+.nav-tabs {
+  border-bottom: none; }
+
+.nav-tabs .nav-link {
+  border: none; }
+
+/*MAIN*/
+#main {
+  padding-bottom: 30px;
+  padding-top: 35px;
+  margin: 0 auto;
+  width: 95%;
+  border: solid;
+  border-radius: 50px;
+  margin-top: 40px; }
+
+.titulo1 {
+  font-size: 70px;
+  padding-left: 25px;
+  padding-top: 25px;
+  font-family: 'Tourney', cursive;
+  font-weight: bold; }
+
+.seccionPrincipal {
+  font-family: 'Lato';
+  color: #f1faeeff;
+  padding: 0 20px;
+  font-size: 25px; }
+
+/*FOTOS*/
+.nuestraFlota {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 46.66667px;
+  font-family: 'Tourney', cursive;
+  font-weight: bold; }
+
+.vehiculos {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 40px; }
+
+.vehiculos__flota {
+  border-radius: 0 100px 0 100px; }
+
+.nombresFlota {
+  display: flex;
+  justify-content: space-around;
+  color: #b047ff;
+  font-weight: bold; }
+
+/*CONSEJOS*/
+#consejos {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 27px;
+  font-family: 'Lato';
+  margin-bottom: 15px; }
+
+.masConsejos__titulo2 {
+  font-size: 35px;
+  font-family: 'Tourney', cursive;
+  font-weight: bold; }
+
+.masConsejos__listaConsejos {
+  list-style-type: circle;
+  color: #f1faeeff; }
+
+.video {
+  width: "553";
+  height: "280"; }
+
+/*PRESUPUESTOS*/
+#presupuestos {
+  text-align: -webkit-center; }
+
+.tiposPresupuestos {
+  text-align: center;
+  padding-top: 100px;
+  font-size: 40px;
+  font-family: 'Tourney', cursive;
+  color: #f1faeeff; }
+
+.tablaPresupuestos {
+  border-style: inherit;
+  width: 55%;
+  padding-top: 5%;
+  font-family: 'Lato';
+  text-align: center;
+  padding-left: 24%;
+  color: #f1faeeff;
+  margin-bottom: 2px; }
+
+/*CONTACTO*/
+#contacto {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: 'Lato';
+  color: #f1faeeff; }
+
+#contacto input:hover {
+  border-radius: 5px;
+  background-color: #a8dadcff; }
+
+.titulo3 {
+  font-family: 'Tourney', cursive;
+  font-size: 30px;
+  margin-bottom: 3%; }
+
+/*footer*/
+#sociales {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 20px;
+  background-image: linear-gradient(to top, #e63946ff, #05001f 80%);
+  margin-top: 2%; }
+
+.listaFooter {
+  display: inline-block;
+  list-style: none; }
+
+.redes {
+  color: #b047ff;
+  font-size: 20px; }
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 1020px) {
+  .listaNav {
+    flex-direction: column;
+    align-items: center; }
+  .titulo1 {
+    padding-top: 140px; }
+  .enlaces {
+    padding: 0px; }
+  .enlaces:hover {
+    transform: translateY(0px); }
+  .listaNav-consejos {
+    position: relative;
+    padding: 0px; }
+  #main {
+    font-size: 2px; }
+  .navbar-brand {
+    display: none; } }
+
+@media screen and (max-width: 800px) {
+  .vehiculos {
+    display: inline-block; }
+  #consejos {
+    display: inline-block; }
+  .video {
+    width: 400px; }
+  .navbar {
+    display: block; }
+  .navegacion {
+    display: none; } }
+
+@media screen and (max-width: 560px) {
+  #contacto {
+    display: inline-block; }
+  .titulo1 {
+    font-size: 3rem;
+    padding-top: 140px; } }
+
+@media screen and (max-width: 480px) {
+  #main {
+    font-size: 12px;
+    border: none; }
+  .titulo1 {
+    font-size: 3rem;
+    padding-top: 140px; }
+  .listaNav {
+    flex-direction: column;
+    align-items: center; } }
+
+@media screen and (max-width: 390px) {
+  #sociales {
+    flex-direction: column;
+    align-items: center; }
+  .listaNav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 7%; } }
