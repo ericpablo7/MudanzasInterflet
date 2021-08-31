@@ -313,6 +313,12 @@ $color-contacto:#a8dadcff;
     .navbar-brand{
         display: none;
     }
+    .navbar{
+        display: block;
+    }    
+    .navegacion{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 800px){
@@ -325,11 +331,15 @@ $color-contacto:#a8dadcff;
     .video{
         width: 400px;
     }
-    .navbar{
-        display: block;
+    
+    
+    
+    #sociales{
+        flex-direction: column;
+        align-items: center;
     }
-    .navegacion{
-        display: none;
+    .copyright{
+        color: #b047ff;
     }
 }
 @media screen and (max-width: 560px){
@@ -358,10 +368,7 @@ $color-contacto:#a8dadcff;
 }
 
 @media screen and (max-width: 390px){
-    #sociales{
-        flex-direction: column;
-        align-items: center;
-    }
+    
     .listaNav{
         flex-direction: column;
         align-items: flex-start;

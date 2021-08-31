@@ -240,6 +240,10 @@ nav ul a {
   #main {
     font-size: 2px; }
   .navbar-brand {
+    display: none; }
+  .navbar {
+    display: block; }
+  .navegacion {
     display: none; } }
 
 @media screen and (max-width: 800px) {
@@ -249,10 +253,11 @@ nav ul a {
     display: inline-block; }
   .video {
     width: 400px; }
-  .navbar {
-    display: block; }
-  .navegacion {
-    display: none; } }
+  #sociales {
+    flex-direction: column;
+    align-items: center; }
+  .copyright {
+    color: #b047ff; } }
 
 @media screen and (max-width: 560px) {
   #contacto {
@@ -273,9 +278,6 @@ nav ul a {
     align-items: center; } }
 
 @media screen and (max-width: 390px) {
-  #sociales {
-    flex-direction: column;
-    align-items: center; }
   .listaNav {
     flex-direction: column;
     align-items: flex-start;
