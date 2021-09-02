@@ -9,7 +9,7 @@
 /*BODY*/
 
 #body{
-    background-color: black;
+    background-color: rgb(5, 0 ,31);
     background-size: cover;
     color: #ff0076;
 }
@@ -125,6 +125,7 @@ nav ul a{
 
 .nav-tabs{
     border-bottom: none;
+    padding-bottom: 10px;
 }
 
 .nav-tabs .nav-link{
@@ -135,13 +136,9 @@ nav ul a{
 $font: 140px;
 
 #main{
-    padding-bottom: 30px;
-    padding-top: 35px;
-    margin: 0 auto;
-    width: 95%;
-    border: solid;
-    border-radius: 50px;
-    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
 }
 
 .titulo1{
@@ -157,6 +154,16 @@ $font: 140px;
     color: #f1faeeff; 
     padding: 0 20px;
     font-size: ($font/2)-45;
+    border: solid #ff0076;
+    border-radius: 50px;
+    width: 50%;
+    height: 350px;
+    padding-top: 15px;
+}
+
+.imgPrincipal{
+    height: 350px;
+    padding-left: 20px;
 }
 
 /*FOTOS*/
@@ -164,18 +171,18 @@ $font: 140px;
 $color-secundario:#b047ff;
 
 .nuestraFlota{
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     text-align: center;
     font-size: $font/3;
     font-family: 'Tourney', cursive;
     font-weight: bold;
+    margin-top: 10px;
 }
 
 
 .vehiculos{
     display: flex;
     justify-content: space-around;
-    padding-top: 40px;
 }
 
 .vehiculos__flota{
@@ -187,6 +194,9 @@ $color-secundario:#b047ff;
     justify-content: space-around;
     color: $color-secundario;
     font-weight: bold;
+    font-size: 30px;
+    padding-top: 20px;
+    
 }
 
 /*CONSEJOS*/
@@ -289,13 +299,17 @@ $color-contacto:#a8dadcff;
 
 /*MEDIA QUERIES*/
 
-@media screen and (max-width: 1020px){
+@media screen and (max-width: 1120px){
     .listaNav{
       flex-direction: column;
       align-items: center;
     }
     .titulo1{
         padding-top: 140px;    
+    }
+    .seccionPrincipal{
+        border: none;
+        width: 100%;
     }
     .enlaces{
         padding: 0px;
@@ -309,6 +323,8 @@ $color-contacto:#a8dadcff;
     }
     #main{
         font-size: 2px;
+        display: flex;
+        flex-direction: column;
     }
     .navbar-brand{
         display: none;
@@ -319,11 +335,22 @@ $color-contacto:#a8dadcff;
     .navegacion{
         display: none;
     }
+    .imgPrincipal{
+        display: none;
+    }
+
 }
 
 @media screen and (max-width: 800px){
     .vehiculos{
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding-top: 30px;
+    }
+    .vehiculos__flota{
+        width: 300px;
+        align-self: center;
     }
     #consejos{
         display: inline-block;
@@ -331,8 +358,13 @@ $color-contacto:#a8dadcff;
     .video{
         width: 400px;
     }
+    .copyright {
+        color: #b047ff; 
+    } 
     
-    
+    .nombresFlota{
+        display: none;
+    }
     
     #sociales{
         flex-direction: column;
@@ -350,7 +382,11 @@ $color-contacto:#a8dadcff;
         font-size: 3rem;
         padding-top: 140px;    
     }
+    .seccionPrincipal{
+        font-size: 20px;
+    }
 }
+
 
 @media screen and (max-width: 480px){
     #main{
@@ -373,6 +409,9 @@ $color-contacto:#a8dadcff;
         flex-direction: column;
         align-items: flex-start;
         padding-left: 7%;
+    }
+    .seccionPrincipal{
+        font-size: 16px;
     }
 }            
         

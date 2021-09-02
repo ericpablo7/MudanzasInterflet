@@ -6,7 +6,7 @@
 
 /*BODY*/
 #body {
-  background-color: black;
+  background-color: #05001f;
   background-size: cover;
   color: #ff0076; }
 
@@ -98,20 +98,17 @@ nav ul a {
   display: none; }
 
 .nav-tabs {
-  border-bottom: none; }
+  border-bottom: none;
+  padding-bottom: 10px; }
 
 .nav-tabs .nav-link {
   border: none; }
 
 /*MAIN*/
 #main {
-  padding-bottom: 30px;
-  padding-top: 35px;
-  margin: 0 auto;
-  width: 95%;
-  border: solid;
-  border-radius: 50px;
-  margin-top: 40px; }
+  display: flex;
+  width: 100%;
+  margin-top: 10px; }
 
 .titulo1 {
   font-size: 70px;
@@ -124,20 +121,29 @@ nav ul a {
   font-family: 'Lato';
   color: #f1faeeff;
   padding: 0 20px;
-  font-size: 25px; }
+  font-size: 25px;
+  border: solid #ff0076;
+  border-radius: 50px;
+  width: 50%;
+  height: 350px;
+  padding-top: 15px; }
+
+.imgPrincipal {
+  height: 350px;
+  padding-left: 20px; }
 
 /*FOTOS*/
 .nuestraFlota {
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   text-align: center;
   font-size: 46.66667px;
   font-family: 'Tourney', cursive;
-  font-weight: bold; }
+  font-weight: bold;
+  margin-top: 10px; }
 
 .vehiculos {
   display: flex;
-  justify-content: space-around;
-  padding-top: 40px; }
+  justify-content: space-around; }
 
 .vehiculos__flota {
   border-radius: 0 100px 0 100px; }
@@ -146,7 +152,9 @@ nav ul a {
   display: flex;
   justify-content: space-around;
   color: #b047ff;
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: 30px;
+  padding-top: 20px; }
 
 /*CONSEJOS*/
 #consejos {
@@ -224,12 +232,15 @@ nav ul a {
   font-size: 20px; }
 
 /*MEDIA QUERIES*/
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1120px) {
   .listaNav {
     flex-direction: column;
     align-items: center; }
   .titulo1 {
     padding-top: 140px; }
+  .seccionPrincipal {
+    border: none;
+    width: 100%; }
   .enlaces {
     padding: 0px; }
   .enlaces:hover {
@@ -238,21 +249,35 @@ nav ul a {
     position: relative;
     padding: 0px; }
   #main {
-    font-size: 2px; }
+    font-size: 2px;
+    display: flex;
+    flex-direction: column; }
   .navbar-brand {
     display: none; }
   .navbar {
     display: block; }
   .navegacion {
+    display: none; }
+  .imgPrincipal {
     display: none; } }
 
 @media screen and (max-width: 800px) {
   .vehiculos {
-    display: inline-block; }
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 30px; }
+  .vehiculos__flota {
+    width: 300px;
+    align-self: center; }
   #consejos {
     display: inline-block; }
   .video {
     width: 400px; }
+  .copyright {
+    color: #b047ff; }
+  .nombresFlota {
+    display: none; }
   #sociales {
     flex-direction: column;
     align-items: center; }
@@ -264,7 +289,9 @@ nav ul a {
     display: inline-block; }
   .titulo1 {
     font-size: 3rem;
-    padding-top: 140px; } }
+    padding-top: 140px; }
+  .seccionPrincipal {
+    font-size: 20px; } }
 
 @media screen and (max-width: 480px) {
   #main {
@@ -281,4 +308,6 @@ nav ul a {
   .listaNav {
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 7%; } }
+    padding-left: 7%; }
+  .seccionPrincipal {
+    font-size: 16px; } }
