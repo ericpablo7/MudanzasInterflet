@@ -59,6 +59,12 @@ nav ul a {
 .listaNav-consejos:hover .listaNav-consejos_sub {
   display: block; }
 
+.camionLogo {
+  flex-grow: 1;
+  margin: 0 auto;
+  display: block;
+  padding-left: 50px; }
+
 /*BOOTSTRAP*/
 .navbar {
   padding-top: 0;
@@ -107,8 +113,14 @@ nav ul a {
 /*MAIN*/
 #main {
   display: flex;
+  justify-content: space-evenly;
   width: 100%;
   margin-top: 10px; }
+
+.pantallaPrincipal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; }
 
 .titulo1 {
   font-size: 70px;
@@ -128,11 +140,20 @@ nav ul a {
   height: 350px;
   padding-top: 15px; }
 
+.seccionPrincipal__subTitulo {
+  font-size: 30px;
+  margin-bottom: 0; }
+
 .imgPrincipal {
   height: 350px;
   padding-left: 20px; }
 
 /*FOTOS*/
+#fotos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; }
+
 .nuestraFlota {
   margin-bottom: 10px;
   text-align: center;
@@ -162,7 +183,9 @@ nav ul a {
   justify-content: space-around;
   padding-top: 27px;
   font-family: 'Lato';
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  justify-content: space-evenly;
+  align-items: center; }
 
 .masConsejos__titulo2 {
   font-size: 35px;
@@ -237,7 +260,7 @@ nav ul a {
     flex-direction: column;
     align-items: center; }
   .titulo1 {
-    padding-top: 140px; }
+    padding-top: 80px; }
   .seccionPrincipal {
     border: none;
     width: 100%; }
@@ -251,7 +274,8 @@ nav ul a {
   #main {
     font-size: 2px;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    align-items: center; }
   .navbar-brand {
     display: none; }
   .navbar {
@@ -259,7 +283,9 @@ nav ul a {
   .navegacion {
     display: none; }
   .imgPrincipal {
-    display: none; } }
+    padding-bottom: 30px; }
+  .masConsejos {
+    padding-left: 20px; } }
 
 @media screen and (max-width: 800px) {
   .vehiculos {
@@ -282,16 +308,25 @@ nav ul a {
     flex-direction: column;
     align-items: center; }
   .copyright {
-    color: #b047ff; } }
+    color: #b047ff; }
+  .imgPrincipal {
+    height: 250px;
+    padding-bottom: 30px; }
+  .tiposPresupuestos {
+    padding-top: 40px; } }
 
 @media screen and (max-width: 560px) {
   #contacto {
-    display: inline-block; }
+    display: inline-block;
+    padding-left: 25px; }
   .titulo1 {
     font-size: 3rem;
-    padding-top: 140px; }
+    padding-top: 100px; }
   .seccionPrincipal {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .video_youtube {
+    width: 380px;
+    padding-left: 30px; } }
 
 @media screen and (max-width: 480px) {
   #main {
@@ -299,7 +334,7 @@ nav ul a {
     border: none; }
   .titulo1 {
     font-size: 3rem;
-    padding-top: 140px; }
+    padding-top: 100px; }
   .listaNav {
     flex-direction: column;
     align-items: center; } }
@@ -310,4 +345,7 @@ nav ul a {
     align-items: flex-start;
     padding-left: 7%; }
   .seccionPrincipal {
-    font-size: 16px; } }
+    font-size: 15px; }
+  .imgPrincipal {
+    height: 150px;
+    padding-bottom: 30px; } }

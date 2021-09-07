@@ -73,6 +73,12 @@ nav ul a{
     display: block;
 }
 
+.camionLogo{
+    flex-grow: 1;
+    margin: 0 auto;
+    display: block;
+    padding-left: 50px;
+}
 
 /*BOOTSTRAP*/
 
@@ -137,10 +143,16 @@ $font: 140px;
 
 #main{
     display: flex;
+    justify-content: space-evenly;
     width: 100%;
     margin-top: 10px;
 }
 
+.pantallaPrincipal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 .titulo1{
     font-size: $font/2;
     padding-left: 25px;
@@ -161,6 +173,11 @@ $font: 140px;
     padding-top: 15px;
 }
 
+.seccionPrincipal__subTitulo{
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
 .imgPrincipal{
     height: 350px;
     padding-left: 20px;
@@ -169,6 +186,13 @@ $font: 140px;
 /*FOTOS*/
 
 $color-secundario:#b047ff;
+
+#fotos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
 
 .nuestraFlota{
     margin-bottom: 10px;
@@ -211,6 +235,8 @@ $color-secundario:#b047ff;
 
 #consejos{
     @include consejitos;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .masConsejos__titulo2{
@@ -305,7 +331,7 @@ $color-contacto:#a8dadcff;
       align-items: center;
     }
     .titulo1{
-        padding-top: 140px;    
+        padding-top: 80px;    
     }
     .seccionPrincipal{
         border: none;
@@ -325,6 +351,7 @@ $color-contacto:#a8dadcff;
         font-size: 2px;
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
     .navbar-brand{
         display: none;
@@ -335,10 +362,13 @@ $color-contacto:#a8dadcff;
     .navegacion{
         display: none;
     }
+    
     .imgPrincipal{
-        display: none;
+        padding-bottom: 30px;
     }
-
+    .masConsejos{
+        padding-left: 20px;
+    }
 }
 
 @media screen and (max-width: 800px){
@@ -373,17 +403,29 @@ $color-contacto:#a8dadcff;
     .copyright{
         color: #b047ff;
     }
+    .imgPrincipal{
+        height: 250px;
+        padding-bottom: 30px;
+    }
+    .tiposPresupuestos{
+        padding-top: 40px;
+    }
 }
 @media screen and (max-width: 560px){
     #contacto{
         display: inline-block;
+        padding-left: 25px;
     }
     .titulo1{
         font-size: 3rem;
-        padding-top: 140px;    
+        padding-top: 100px;    
     }
     .seccionPrincipal{
         font-size: 20px;
+    }
+    .video_youtube{
+        width: 380px;
+        padding-left: 30px;
     }
 }
 
@@ -395,7 +437,7 @@ $color-contacto:#a8dadcff;
     }
     .titulo1{
         font-size: 3rem;
-        padding-top: 140px;    
+        padding-top: 100px;    
     }
     .listaNav{
         flex-direction: column;
@@ -411,7 +453,11 @@ $color-contacto:#a8dadcff;
         padding-left: 7%;
     }
     .seccionPrincipal{
-        font-size: 16px;
+        font-size: 15px;
+    }
+    .imgPrincipal{
+        height: 150px;
+        padding-bottom: 30px;
     }
 }            
         
