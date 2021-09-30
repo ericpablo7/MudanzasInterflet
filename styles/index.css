@@ -33,7 +33,7 @@
   list-style: none; }
 
 .navegacion :hover {
-  transition: color 1.2s;
+  transition: color 1s;
   color: #e63946ff; }
 
 nav ul a {
@@ -44,9 +44,6 @@ nav ul a {
 .enlaces {
   padding: 15px; }
 
-.enlaces:hover {
-  transform: translateY(10px); }
-
 .listaNav-consejos {
   position: relative;
   padding: 15px; }
@@ -54,7 +51,10 @@ nav ul a {
 .listaNav-consejos_sub {
   position: absolute;
   display: none;
-  list-style-type: none; }
+  list-style-type: none;
+  padding: 10px;
+  border: solid #ff0076;
+  box-shadow: 0 0 55px #ff0076; }
 
 .listaNav-consejos:hover .listaNav-consejos_sub {
   display: block; }
@@ -113,9 +113,10 @@ nav ul a {
 /*MAIN*/
 #main {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   width: 100%;
-  margin-top: 10px; }
+  margin-top: 10px;
+  align-items: center; }
 
 .pantallaPrincipal {
   display: flex;
@@ -138,14 +139,13 @@ nav ul a {
   border-radius: 50px;
   width: 50%;
   height: 350px;
-  padding-top: 15px; }
+  padding-top: 20px; }
 
 .seccionPrincipal__subTitulo {
-  font-size: 30px;
-  margin-bottom: 0; }
+  font-size: 30px; }
 
 .imgPrincipal {
-  height: 350px;
+  height: 250px;
   padding-left: 20px; }
 
 /*FOTOS*/
@@ -155,27 +155,24 @@ nav ul a {
   justify-content: space-evenly; }
 
 .nuestraFlota {
-  margin-bottom: 10px;
   text-align: center;
   font-size: 46.66667px;
   font-family: 'Tourney', cursive;
-  font-weight: bold;
-  margin-top: 10px; }
+  font-weight: bold; }
 
 .vehiculos {
   display: flex;
   justify-content: space-around; }
 
 .vehiculos__flota {
-  border-radius: 0 100px 0 100px; }
+  border-radius: 20px; }
 
 .nombresFlota {
   display: flex;
   justify-content: space-around;
   color: #b047ff;
   font-weight: bold;
-  font-size: 30px;
-  padding-top: 20px; }
+  font-size: 30px; }
 
 /*CONSEJOS*/
 #consejos {
@@ -188,13 +185,14 @@ nav ul a {
   align-items: center; }
 
 .masConsejos__titulo2 {
-  font-size: 35px;
+  font-size: 50px;
   font-family: 'Tourney', cursive;
   font-weight: bold; }
 
 .masConsejos__listaConsejos {
   list-style-type: circle;
-  color: #f1faeeff; }
+  color: #f1faeeff;
+  font-size: 20px; }
 
 .video {
   width: "553";
@@ -206,8 +204,8 @@ nav ul a {
 
 .tiposPresupuestos {
   text-align: center;
-  padding-top: 100px;
-  font-size: 40px;
+  padding-top: 50px;
+  font-size: 60px;
   font-family: 'Tourney', cursive;
   color: #f1faeeff; }
 
@@ -219,7 +217,8 @@ nav ul a {
   text-align: center;
   padding-left: 24%;
   color: #f1faeeff;
-  margin-bottom: 2px; }
+  margin-bottom: 2px;
+  font-size: 30px; }
 
 /*CONTACTO*/
 #contacto {
@@ -235,7 +234,7 @@ nav ul a {
 
 .titulo3 {
   font-family: 'Tourney', cursive;
-  font-size: 30px;
+  font-size: 40px;
   margin-bottom: 3%; }
 
 /*footer*/
@@ -253,6 +252,9 @@ nav ul a {
 .redes {
   color: #b047ff;
   font-size: 20px; }
+
+.redesSociales {
+  width: 28px; }
 
 /*MEDIA QUERIES*/
 @media screen and (max-width: 1120px) {

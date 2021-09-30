@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="/imagenes/favicon.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Otomanopee+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fuggles&family=Tourney:wght@100&display=swap" rel="stylesheet">
     <title>Mi primera pagweb</title>
@@ -20,16 +21,15 @@
     
     <header id="index">
         <nav class="navegacion">
-            <a class="camionLogo" href="./"><img src="imagenes/camionlogo 2.png" alt="camionlogo"></a>
+            <a data-aos="fade-right" data-aos-duration="3000" class="camionLogo" href="./"><img src="imagenes/camionlogo 2.png" alt="camionlogo"></a>
             <ul class="listaNav">
                 <li class="enlaces"><a href="./">Inicio</a></li>
                 <li class="enlaces"><a href="fotos.html">Fotos</a></li>
                 <li class="listaNav-consejos">
                     <a href="consejos.html">Consejos</a>
                     <ul class="listaNav-consejos_sub">
-                        <li><a href="">Particular</a></li>
-                        <li><a href="">Empresa</a></li>
-                        <li><a href="">Otros</a></li>
+                        <li><a href="consejos.html">Particular</a></li>
+                        <li><a href="consejos.html">Empresa</a></li>
                     </ul>
                 </li>
                 <li class="enlaces"><a href="presupuestos.html">Presupuesto</a></li>
@@ -75,15 +75,15 @@
 <!--SECCION CONTACTO-->
     
     <section id="contacto">
-        <h2 class="titulo3">Contacto 📲</h2>
+        <h2 data-aos="flip-right" data-aos-duration="1000" class="titulo3">Contactanos 📲</h2>
         <form class="formulario" action="" method="POST" enctype="application/x-www-form-urlencoded"> 
-            <div class="formulario__datosPersonales">
+            <div data-aos="flip-right" data-aos-duration="2000" class="formulario__datosPersonales">
                 <input type="text" name="Nombre" placeholder=" Ingrese su nombre" id="Nombre" required><br>
                 <input type="text" name="Apellido" placeholder=" Ingrese su apellido" id="Apellido"><br>
                 <input type="number" name="Edad" placeholder=" Ingrese su edad" id="Edad"><br>
                 <input type="email" name="Email" placeholder=" nombre@ejemplo.com" id="Email" /><br><br>
             </div>
-            <div class="formulario__datosUbicacion">
+            <div  data-aos="flip-right" data-aos-duration="2000" class="formulario__datosUbicacion">
                 <label for="Localidad">Localidad</label>
                 <select name="Localidad" id="Localidad">
                     <option value="Seleccionar" selected disabled>Seleccionar</option>
@@ -92,13 +92,17 @@
                 </select>
             </div>
         </form>
-        <div class="consultas">
+        <div  data-aos="flip-right" data-aos-duration="3000" class="consultas">
             <h3 class="consultas__ingreso"> Ingrese su consulta: 🚨 </h3><br>
             <textarea name="Consulta" id="" cols="30" rows="10" placeholder="CONSULTA..."></textarea><br>
             <input type="submit" name="enviar" id="">
             <input type="reset" name="limpar campo" id="">
         </div>
     </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 <!--FOOTER-->
@@ -108,15 +112,15 @@
     <!--BOOTSTRAP-->
     <nav>
         <ul class="nav nav-tabs">
-            <li class="nav-item-footer">
-              <a class="nav-link" href="#">Facebook</a>
-            </li>
-            <li class="nav-item-footer">
-              <a class="nav-link" href="#">Instagram</a>
-            </li>
-            <li class="nav-item-footer">
-              <a class="nav-link" href="#">Twitter</a>
-            </li>
+          <li class="nav-item-footer">
+            <a class="nav-link" href="#">Facebook <img class="redesSociales" src="https://img.icons8.com/color/48/000000/facebook-circled--v5.png"/> </a>
+          </li>
+          <li class="nav-item-footer">
+            <a class="nav-link" href="#">Instagram <img class="redesSociales" src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/></a>
+          </li>
+          <li class="nav-item-footer">
+            <a class="nav-link" href="#">Twitter <img class="redesSociales" src="https://img.icons8.com/fluency/48/000000/twitter.png"/></a>
+          </li>
         </ul>
     </nav>
     <!--BOOTSTRAP-->
