@@ -275,7 +275,12 @@ $color-secundario:#b047ff;
    margin-bottom: 2px;
    font-size: 30px;
 }
-
+ tbody, td, tfoot, th, thead, tr {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+    box-shadow: 0 0 1000px #ff0076;
+}
 /*CONTACTO*/
 
 $color-contacto:#a8dadcff;
@@ -324,6 +329,24 @@ $color-contacto:#a8dadcff;
 
 .redesSociales{
     width: 28px;
+}
+
+.error{
+    background-color: #ff0076;
+    display: flex;
+    row-gap: 100px;
+    align-items: center;
+    font-size: 40px;
+    height: 100vh;
+    flex-direction: column;
+    font-family: consolas;
+    color: #46017a;
+}
+.errorTitulo{
+    box-shadow: 0 0 1000px #450179;
+}
+.errorVolver{
+    text-decoration: none;
 }
 
 /*MEDIA QUERIES*/
